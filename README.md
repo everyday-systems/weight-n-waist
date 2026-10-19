@@ -1,5 +1,7 @@
 # Weight n Waist
 
+**Live app:** [weight-n-waist.vercel.app](https://weight-n-waist.vercel.app/)
+
 A responsive, mobile-friendly measurement journal built with plain HTML, CSS, and JavaScript.
 
 - Log weight and waist with optional hip, chest, thigh, upper arm, and neck measurements.
