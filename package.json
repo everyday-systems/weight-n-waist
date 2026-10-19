@@ -1,0 +1,11 @@
+{
+  "name": "weight-n-waist",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A mobile-friendly weight and body measurement journal.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node --check weight-n-waist-app/dist/app.js",
+    "test": "node --test tests/app.test.mjs"
+  }
+}
