@@ -5,7 +5,7 @@
   "description": "A mobile-friendly weight and body measurement journal.",
   "scripts": {
     "dev": "node scripts/serve.mjs",
-    "check": "node --check weight-n-waist-app/dist/app.js",
-    "test": "node --test tests/app.test.mjs"
+    "check": "node --check weight-n-waist-app/dist/app.js && node --check weight-n-waist-app/dist/pwa.js && node --check weight-n-waist-app/dist/sw.js",
+    "test": "node --test tests/*.test.mjs"
   }
 }

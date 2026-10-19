@@ -7,6 +7,15 @@ A responsive, mobile-friendly measurement journal built with plain HTML, CSS, an
 - Switch between metric and imperial units.
 - Export CSV backups.
 - Explore a clearly labeled sample journal before creating real entries.
+- Install as a standalone PWA and log measurements offline after the first successful online load.
+
+## Install the app
+
+Open the deployed HTTPS site and go to **Settings → Take your journal with you**. An **Install app** button appears when the browser offers installation. You can also use the browser's install menu. On iPhone/iPad, open in Safari and choose **Share → Add to Home Screen**.
+
+Wait for **Ready for offline check-ins on this device** in Settings before going offline. The app shell is cached locally; measurements remain in browser storage. External fonts may use system fallbacks offline. Installation does not provide cloud backup or cross-device synchronization, and browser storage can still be cleared or evicted.
+
+Updates download in the background. Save your check-in, close all app windows and browser tabs for this site, and reopen to activate a waiting update. This avoids reloading an unsaved entry. Developers must bump `CACHE` in `weight-n-waist-app/dist/sw.js` whenever changing any cached app asset. PNG app icons can be regenerated on Windows with `scripts/generate-icons.ps1`.
 
 ## Deploy to Vercel
 

@@ -6,6 +6,11 @@ const files = new Map([
   ['/index.html', ['index.html', 'text/html; charset=utf-8']],
   ['/style.css', ['style.css', 'text/css; charset=utf-8']],
   ['/app.js', ['app.js', 'text/javascript; charset=utf-8']],
+  ['/pwa.js', ['pwa.js', 'text/javascript; charset=utf-8']],
+  ['/sw.js', ['sw.js', 'text/javascript; charset=utf-8']],
+  ['/manifest.webmanifest', ['manifest.webmanifest', 'application/manifest+json']],
+  ...['icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png']
+    .map(name => [`/icons/${name}`, [`icons/${name}`, 'image/png']]),
 ]);
 const port = Number(process.env.PORT || 4173);
 createServer(async (request, response) => {
